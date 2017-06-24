@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Firmware on Padavan Firmware Mod by 荒野无灯</title>
-    <link>http://p4davan.80x86.io/tags/firmware/</link>
-    <description>Recent content in Firmware on Padavan Firmware Mod by 荒野无灯</description>
+    <title>B70 on Padavan Firmware Mod by 荒野无灯</title>
+    <link>http://p4davan.80x86.io/tags/b70/</link>
+    <description>Recent content in B70 on Padavan Firmware Mod by 荒野无灯</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright (c) 2016 - 2017, 荒野无灯; all rights reserved.</copyright>
     <lastBuildDate>Sat, 24 Jun 2017 15:54:30 +0800</lastBuildDate>
     
-	<atom:link href="http://p4davan.80x86.io/tags/firmware/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://p4davan.80x86.io/tags/b70/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,15 +19,6 @@
       
       <guid>http://p4davan.80x86.io/blog/2017/06/24/totolink-a3004ns-and-hiwifi-b70-firmware-released/</guid>
       <description>友情提示 刷机有风险,看清再操作.产生任何问题自行承担. 固件界面DEMO 我的padavan固件 的demo 页面就是 基于 3004NS 建立的： http://pdv.80x86.io/ 固件正在编译上</description>
-    </item>
-    
-    <item>
-      <title>2017-06-10 固件 changelog</title>
-      <link>http://p4davan.80x86.io/blog/2017/06/10/firmware-changelog-20170610/</link>
-      <pubDate>Sat, 10 Jun 2017 22:44:35 +0800</pubDate>
-      
-      <guid>http://p4davan.80x86.io/blog/2017/06/10/firmware-changelog-20170610/</guid>
-      <description>终于又迎来了一大波更新 五机齐发(D1,Y1,L1,K2,K2_256),准备开刷 虽然说是beta,不过在此之前群主已经测试多次.不出意外这就</description>
     </item>
     
   </channel>
