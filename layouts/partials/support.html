@@ -1,29 +1,60 @@
 <div class="container" id="support">
 
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-12">
 
       <section>
         {{ .Content }}
       </section>
     </div>
 
-    <div class="col-md-4" style="margin: 20px 0;">
-      <section>
-        {{ if isset .Site.Params "qq_group_qrcode" }}
-
+    <div class="col-md-12" style="margin: 20px 0;">
+      <section style="float:left;margin-left:10px;">
+{{ if isset .Site.Params "qq_group_qrcode" }}
         <div class="heading">
-          <h3>加群二维码</h3>
+          <h3>{{ .Site.Params.qq_group_name }}</h3>
         </div>
-        <img src="{{ .Site.Params.qq_group_qrcode }}" alt=""> {{ end }} {{ if isset .Site.Params "qq_group_num" }}
-
+        <img src="{{ .Site.Params.qq_group_qrcode }}" alt=""> 
+{{ end }} 
+{{ if isset .Site.Params "qq_group_num" }}
         <div class="heading">
           <h3>QQ 群号</h3>
         </div>
-        <h2>{{ .Site.Params.qq_group_num }}</h2> {{ end }}
+        <h2>{{ .Site.Params.qq_group_num }}</h2> 
+{{ end }}
       </section>
-    </div>
+
+      <section style="float:left;margin-left:40px;">
+{{ if isset .Site.Params "qq_group2_qrcode" }}
+        <div class="heading">
+          <h3>{{ .Site.Params.qq_group2_name }}</h3>
+        </div>
+        <img src="{{ .Site.Params.qq_group2_qrcode }}" alt=""> 
+{{ end }} 
+{{ if isset .Site.Params "qq_group2_num" }}
+        <div class="heading">
+          <h3>QQ 群号</h3>
+        </div>
+        <h2>{{ .Site.Params.qq_group2_num }}</h2> 
+{{ end }}
+      </section>
+
+        <section style="float:left;margin-left:40px;">
+            {{ if isset .Site.Params "qq_group3_qrcode" }}
+            <div class="heading">
+                <h3>{{ .Site.Params.qq_group3_name }}</h3>
+            </div>
+            <img src="{{ .Site.Params.qq_group3_qrcode }}" alt="">
+            {{ end }}
+            {{ if isset .Site.Params "qq_group3_num" }}
+            <div class="heading">
+                <h3>QQ 群号</h3>
+            </div>
+            <h2>{{ .Site.Params.qq_group3_num }}</h2>
+            {{ end }}
+        </section>
+    </div><!-- /qrcode group -->
 
   </div>
   <!-- /.row -->
-</div>
+</div><!-- /.container -->

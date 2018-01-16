@@ -104,9 +104,25 @@ hasCJKLanguage = true
     # Enable the contact form by entering your Formspree.io email
     email = "your@email.com"
 
-    qq_group_qrcode = "http://tool.oschina.net/action/qrcode/generate?data=http%3A%2F%2Fjq.qq.com%2F%3F_wv%3D1027%26k%3D2J5myxG&output=image%2Fpng&error=H&type=0&margin=0&size=4"
+    qq_group_name  = "Padavan固件路由交流1群"
+
+    qq_group_qrcode = "http://tool.oschina.net/action/qrcode/generate?data=http%3A%2F%2Fqm.qq.com%2Fcgi-bin%2Fqm%2Fqr%3Fk%3DcqDLOzMUtaSGUNPt_aHqAYTFSIN2WYG_&output=image%2Fpng&error=H&type=0&margin=0&size=4"
 
     qq_group_num  = "93780191"
+
+    # group 2
+    qq_group2_name  = "Padavan固件路由交流2群"
+
+    qq_group2_qrcode = "http://tool.oschina.net/action/qrcode/generate?data=http%3A%2F%2Fqm.qq.com%2Fcgi-bin%2Fqm%2Fqr%3Fk%3DRIPPdbqKsM5Uc5ogfkRV2vyJQUypbtPX&output=image%2Fpng&error=H&type=0&margin=0&size=4"
+
+    qq_group2_num  = "44897850"
+
+    # group pro
+    qq_group3_name  = "Padavan固件交流Pro群"
+
+    qq_group3_qrcode = "http://tool.oschina.net/action/qrcode/generate?data=http%3A%2F%2Fqm.qq.com%2Fcgi-bin%2Fqm%2Fqr%3Fk%3DtRSYmquiCVEyEeZdcvvboanfG3AHu-k8&output=image%2Fpng&error=H&type=0&margin=0&size=4"
+
+    qq_group3_num  = "22850214"
 
     about_us = "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>"
     copyright = "Copyright (c) 2016 - 2017, 荒野无灯; all rights reserved."
