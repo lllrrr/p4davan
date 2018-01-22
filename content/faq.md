@@ -70,6 +70,12 @@ answer: 这个问题被人问了无数次。我有点想骂人了。
 不是给你用来重启的。
 如果我不更新固件不折腾padavan系统。我的路由器可以开10年不动。
 
+## 5. 我想问下，老毛子固件怎么查看每个设备的实时流量
+
+answer: 之前也有集成过按IP查看单个设备流量的功能。但是MTK芯片的路由器都有一个问题：
+HW NAT打开后会导致现有的流量统计错误。然而，为了使用流量统计而关闭HW NAT是不值得的。
+因此，后面我又把这个功能移除了。
+
 ---
 
 > In case you haven't found the answer for your question please feel free to contact us, our customer support will be happy to help you.
