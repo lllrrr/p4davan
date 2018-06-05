@@ -2,7 +2,7 @@
 categories = ["padavan"]
 date = "2018-06-05T18:02:24+08:00"
 tags = ["update"]
-title = "201806 update"
+title = "201806 固件更新记录"
 
 +++
 
