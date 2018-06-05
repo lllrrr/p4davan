@@ -64,17 +64,25 @@ hasCJKLanguage = true
     url = "http://twitter.com"
     pre = "<i class='fa fa-2x fa-twitter'></i>"
 
+
 [[menu.topbar]]
     weight = 3
+    name = "Main"
+    url = "http://files.80x86.io/router/rom/"
+    pre = "<i class='fa fa-2x fa-folder-open'></i>"
+
+
+[[menu.topbar]]
+    weight = 4
     name = "Mirror1"
     url = "http://router.mirror1.80x86.io:8088/"
     pre = "<i class='fa fa-2x fa-folder-open'></i>"
 
 
 [[menu.topbar]]
-    weight = 4
+    weight = 5
     name = "Mirror2"
-    url = "http://files.80x86.io/router/rom/"
+    url = "http://router.mirror2.80x86.io"
     pre = "<i class='fa fa-2x fa-folder-open'></i>"
 
 [params]
