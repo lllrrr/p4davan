@@ -19,7 +19,7 @@
 
   <meta name="generator" content="Hugo 0.21" />
 
-  <link href='//fonts.css.network/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+  <link href='//fonts.cat.net/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
 
   
   <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -242,6 +242,22 @@ restart_ss
 一般来说这个条件还是不是那么容易触发的。但是不排除某些人使用的是免费的$$，稳定性和速度没法保障。
 你有两个选择：其一是关闭Status Detection， 其二是，花占钱购买一个好点的$$吧。</p>
 
+<h2 id="4-老毛子有没有定时重启">4. 老毛子有没有定时重启？</h2>
+
+<p>answer: 这个问题被人问了无数次。我有点想骂人了。
+定时任务在Linux里一般由Cron daemon来负责。padavan是基于Linux的。这个功能并没有省略。
+自己进入 <a href="http://my.router/Advanced_Services_Content.asp">http://my.router/Advanced_Services_Content.asp</a> 就可看到。
+还有我要多说一句：我一直是反对自动重启这个东西的。没事别重启。
+定时任务是用来做任何其它有意义的事情的。
+不是给你用来重启的。
+如果我不更新固件不折腾padavan系统。我的路由器可以开10年不动。</p>
+
+<h2 id="5-我想问下-老毛子固件怎么查看每个设备的实时流量">5. 我想问下，老毛子固件怎么查看每个设备的实时流量</h2>
+
+<p>answer: 之前也有集成过按IP查看单个设备流量的功能。但是MTK芯片的路由器都有一个问题：
+HW NAT打开后会导致现有的流量统计错误。然而，为了使用流量统计而关闭HW NAT是不值得的。
+因此，后面我又把这个功能移除了。</p>
+
 <hr />
 
 <blockquote>
@@ -286,6 +302,19 @@ restart_ss
                 
                 <div class="item same-height-row clearfix">
                     <div class="image same-height-always">
+                        <a href="http://p4davan.80x86.io/blog/2018/06/07/20180607-padavan-fw-update/">
+                          
+                            <img src="http://p4davan.80x86.io/img/banners/update.jpg" class="img-responsive" alt="">
+                          
+                        </a>
+                    </div>
+                    <div class="name same-height-always">
+                        <h5><a href="http://p4davan.80x86.io/blog/2018/06/07/20180607-padavan-fw-update/">201806 固件更新记录</a></h5>
+                    </div>
+                </div>
+                
+                <div class="item same-height-row clearfix">
+                    <div class="image same-height-always">
                         <a href="http://p4davan.80x86.io/blog/2017/06/24/totolink-a3004ns-and-hiwifi-b70-firmware-released/">
                           
                             <img src="http://p4davan.80x86.io/img/placeholder.png" class="img-responsive" alt="">
@@ -310,19 +339,6 @@ restart_ss
                     </div>
                 </div>
                 
-                <div class="item same-height-row clearfix">
-                    <div class="image same-height-always">
-                        <a href="http://p4davan.80x86.io/blog/2017/06/11/how-to-setup-a-ngrok-server/">
-                          
-                            <img src="http://p4davan.80x86.io/img/blog/2017/06/11/ngrok.png" class="img-responsive" alt="">
-                          
-                        </a>
-                    </div>
-                    <div class="name same-height-always">
-                        <h5><a href="http://p4davan.80x86.io/blog/2017/06/11/how-to-setup-a-ngrok-server/">如何自己架设一个ngrok服务端</a></h5>
-                    </div>
-                </div>
-                
             </div>
 
             <hr class="hidden-md hidden-lg">
@@ -334,11 +350,11 @@ restart_ss
         
         <div class="col-md-4 col-sm-6">
 
-          <h4>QQ group</h4>
+          <h4>2群（1群已经满员）</h4>
 
           <div class="row">
-  <div class="col-md-2">
-    <img src="http://tool.oschina.net/action/qrcode/generate?data=http%3A%2F%2Fjq.qq.com%2F%3F_wv%3D1027%26k%3D2J5myxG&amp;output=image%2Fpng&amp;error=H&amp;type=0&amp;margin=0&amp;size=4" alt="" style="margin: 20px 0;">
+  <div class="col-md-2"> 
+    <img src="http://tool.oschina.net/action/qrcode/generate?data=http%3A%2F%2Fqm.qq.com%2Fcgi-bin%2Fqm%2Fqr%3Fk%3DRIPPdbqKsM5Uc5ogfkRV2vyJQUypbtPX&amp;output=image%2Fpng&amp;error=H&amp;type=0&amp;margin=0&amp;size=4" alt="" style="margin: 20px 0;">
   </div>
 </div>
 
