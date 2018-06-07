@@ -1,0 +1,32 @@
+#!/bin/sh
+
+# ref to https://jamie.curle.io/publishing-hugo-with-makefile
+# fix fatal: Unable to create 'p4davan/public/.git/index.lock': No such file or directory
+# and fix fatal: Not a git repository: './.git' error
+# ref to https://groups.google.com/d/msg/msysgit/PFuIcYCZ31o/BlH9_3qJY-YJ
+# and https://stackoverflow.com/questions/7645480/why-doesnt-setting-git-work-tree-work-in-a-post-commit-hook
+
+# The problem here is that in post-commit hooks (and also pre-commit, prepare-commit-msg and commit-msgt) the GIT_INDEX_FILE environment variable is set to .git/index. (This isn't documented in the githooks documentation, but I've posted elsewhere about the settings of environment variables and the current directory in git hooks.)
+#
+# The effect of the GIT_INDEX_FILE environment variable is described in the ENVIRONMENT VARIABLES section of the git man page as:
+# GIT_INDEX_FILE
+# This environment [variable] allows the specification of an alternate index file. If not specified, the default of $GIT_DIR/index is used.
+#
+# ... and for some reason, in this situation, GIT_INDEX_FILE is being used relative to GIT_WORK_TREE.
+#
+# To make the hook work as you would expect, you just need to unset GIT_INDEX_FILE
+
+unset GIT_INDEX_FILE
+#unset GIT_DIR
+
+# get the branch and store it in a variable.
+branch=`git rev-parse --symbolic-full-name --abbrev-ref HEAD`
+
+# I only want to "do stuff" if we're on the master branch
+if [ "$branch" = "master" ]
+then
+    # the makefile does all the publishing and is explained below.
+    #make publish
+    cd /d/project/p4davan/p4davan
+    ./deploy_to_gh_pages.sh
+fi
