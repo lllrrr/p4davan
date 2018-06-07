@@ -145,3 +145,7 @@ a.buttons:hover {
 #fw_ver {
   width: 238px;
 }
+
+ #post-content img {
+	max-width: 100%;
+}
