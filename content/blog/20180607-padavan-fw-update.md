@@ -64,7 +64,7 @@ openwrt 很久以前就支持SMB2.0 协议了,然而padavan是个比较保守一
 
 
 关于win10 在1709版之后默认禁用smb 1.0的说明,详情可参阅m$的支持文档:
-[SMBv1 不被安装的 Windows 10 秋季创建者更新和 Windows 服务器、 版本 1709年及更高版本中的默认值](https://support.microsoft.com/zh-cn/help/4034314/smbv1-is-not-installed-by-default-in-windows)
+[SMBv1 在 Windows 10 秋季创建者更新和 Windows 服务器、 版本 1709年及更高版本中的将默认不被安装](https://support.microsoft.com/en-us/help/4034314/smbv1-is-not-installed-by-default-in-windows)
 
 
 ![](/img/blog/2018/06/07/win10_ready.jpg)
@@ -127,11 +127,12 @@ shellinabox： 默认读取httpd的证书,也就是说,和前面步骤里你设�
 httpd的ssl证书.
 aria2的证书路径是:/mnt/aria/config/ssl.crt (对应配置界面的Aria2 Certificate) 和 /mnt/aria/config/ssl.key (对应配置界面的Aria2 Certificate Key)
 
-同时,增加了 Rpc Secure 选项开头,用户可自行控制打开和关闭ssl.
+同时,增加了 Rpc Secure 选项,用户可自行控制打开和关闭ssl.
 Rpc Certificate Domain 则是证书对应的域名.
 
 注意:
 aria2 的ssl一旦打开,那么,你通过浏览器打开aria2 web ui时, 填写的rpc地址一定要是和对应的SSL证书匹配的.
+同时,打开ssl功能后,你再也不能通过非ssl的rpc协议去连接了(比如http或 ws 协议 ).
 不然无法连接.打开控制台你会发现chrome在报怨: 
 `Failed to load resource: net::ERR_CERT_COMMON_NAME_INVALID`
 
